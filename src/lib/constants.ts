@@ -145,7 +145,7 @@ export const PROJECTS: Project[] = [
     outcome: "10× faster",
     github: "#",
     live: "#",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/projects/project-1.png`,
+    image: "/images/projects/project-1.png",
   },
   {
     id: 2,
@@ -157,7 +157,7 @@ export const PROJECTS: Project[] = [
     outcome: "Live dashboard",
     github: "#",
     live: "#",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/projects/project-2.png`,
+    image: "/images/projects/project-2.png",
   },
   {
     id: 3,
@@ -168,7 +168,7 @@ export const PROJECTS: Project[] = [
     categories: ["AI", "Automation"],
     outcome: "Full system live",
     github: "#",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/projects/project-1.png`,
+    image: "/images/projects/project-1.png",
   },
   {
     id: 4,
@@ -180,7 +180,7 @@ export const PROJECTS: Project[] = [
     outcome: "3× faster ETL",
     github: "#",
     live: "#",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/projects/project-2.png`,
+    image: "/images/projects/project-2.png",
   },
 ];
 
@@ -235,9 +235,9 @@ export const CONTENT_PILLARS = [
 ];
 
 export const YOUTUBE_VIDEOS = [
-  { title: "How I Build AI Systems at IIT Jodhpur", status: "Coming soon", thumbnail: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/youtube/youtube-1.png` },
-  { title: "My Productivity OS — Full Breakdown", status: "Coming soon", thumbnail: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/youtube/youtube-1.png` },
-  { title: "From Student to Builder — The Mindset Shift", status: "Coming soon", thumbnail: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/youtube/youtube-1.png` },
+  { title: "How I Build AI Systems at IIT Jodhpur", status: "Coming soon", thumbnail: "/images/youtube/youtube-1.png" },
+  { title: "My Productivity OS — Full Breakdown", status: "Coming soon", thumbnail: "/images/youtube/youtube-1.png" },
+  { title: "From Student to Builder — The Mindset Shift", status: "Coming soon", thumbnail: "/images/youtube/youtube-1.png" },
 ];
 
 // ========================================

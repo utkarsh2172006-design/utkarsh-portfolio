@@ -10,6 +10,7 @@ import {
   type ProjectCategory,
   type Project,
 } from "@/lib/constants";
+import Image from "next/image";
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<ProjectCategory>("All");
@@ -181,10 +182,11 @@ export default function Projects() {
               border: "1px solid var(--border-primary)",
             }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
+            <Image
+              unoptimized
               src={hoveredProject.image} 
               alt={hoveredProject.title}
+              width={400} height={300}
               className="w-full h-full object-cover"
             />
           </motion.div>

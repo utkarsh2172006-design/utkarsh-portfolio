@@ -105,6 +105,7 @@ export default function YouTube() {
               >
                 {video.thumbnail && (
                   <Image
+                    unoptimized
                     src={video.thumbnail}
                     alt={video.title}
                     fill

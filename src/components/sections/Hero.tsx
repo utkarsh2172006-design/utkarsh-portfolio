@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { HERO_DATA } from "@/lib/constants";
 
+import Image from "next/image";
+
 const containerVariants = {
   hidden: {},
   visible: {
@@ -46,10 +48,8 @@ export default function Hero() {
         animate={{ opacity: 0.6, scale: 1, rotate: 0 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        <motion.img
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/hero/orb.png`}
-          alt=""
-          className="w-full h-full object-contain mix-blend-screen"
+        <motion.div
+          className="w-full h-full"
           animate={{
             y: [0, -30, 0],
             rotate: [0, 10, 0],
@@ -59,7 +59,15 @@ export default function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-        />
+        >
+          <Image
+            unoptimized
+            src="/images/hero/orb.png"
+            alt=""
+            width={800} height={800}
+            className="w-full h-full object-contain mix-blend-screen"
+          />
+        </motion.div>
       </motion.div>
 
       <motion.div

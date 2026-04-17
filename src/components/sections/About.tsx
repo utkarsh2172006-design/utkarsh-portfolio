@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { ABOUT_PARAGRAPHS, ABOUT_TIMELINE, ABOUT_STATS } from "@/lib/constants";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -41,10 +42,11 @@ export default function About() {
               className="absolute inset-0 z-20 opacity-50 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"
               style={{ backgroundColor: "var(--accent-primary)", mixBlendMode: "overlay" }}
             />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/profile/portrait.png`}
+            <Image
+              unoptimized
+              src="/images/profile/portrait.png"
               alt="Utkarsh Jaiswal"
+              width={600} height={800}
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
             />
             {/* Corner acccents */}
