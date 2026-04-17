@@ -44,7 +44,7 @@ export default function About() {
             />
             <Image
               unoptimized
-              src="/images/profile/portrait.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/profile/portrait.png`}
               alt="Utkarsh Jaiswal"
               width={600} height={800}
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"

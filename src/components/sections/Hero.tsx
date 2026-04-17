@@ -62,7 +62,7 @@ export default function Hero() {
         >
           <Image
             unoptimized
-            src="/images/hero/orb.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/hero/orb.png`}
             alt=""
             width={800} height={800}
             className="w-full h-full object-contain mix-blend-screen"
