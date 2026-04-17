@@ -47,7 +47,7 @@ export default function Hero() {
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
         <motion.img
-          src="/images/hero/orb.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/hero/orb.png`}
           alt=""
           className="w-full h-full object-contain mix-blend-screen"
           animate={{

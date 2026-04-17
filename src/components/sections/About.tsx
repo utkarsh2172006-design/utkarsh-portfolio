@@ -43,7 +43,7 @@ export default function About() {
             />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/profile/portrait.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/profile/portrait.png`}
               alt="Utkarsh Jaiswal"
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
             />
