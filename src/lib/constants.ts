@@ -45,9 +45,9 @@ export const ABOUT_PARAGRAPHS = [
 ];
 
 export const ABOUT_TIMELINE = [
-  { year: "2022", label: "Started CS fundamentals" },
-  { year: "2023", label: "Entered IIT Jodhpur, AI & DS" },
-  { year: "2024", label: "Started building real systems" },
+  { year: "2022–2024", label: "Started from scratch — learning, experimenting, and building on YouTube alongside my academics" },
+  { year: "2025", label: "Stepped into IIT Jodhpur to pursue AI & Data Science" },
+  { year: "2026", label: "Now focused on building real-world solutions using data and AI systems" },
 ];
 
 export const ABOUT_STATS = [
