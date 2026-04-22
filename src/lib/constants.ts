@@ -255,13 +255,13 @@ export const NOW_ITEMS = [
 export const CONTACT_LINKS = [
   {
     label: "Email",
-    value: "utkarsh@email.com",
-    href: "mailto:utkarsh@email.com",
+    value: "utkarsh2172006@gmail.com",
+    href: "mailto:utkarsh2172006@gmail.com",
   },
   {
     label: "LinkedIn",
-    value: "/in/utkarsh",
-    href: "https://linkedin.com/in/utkarsh",
+    value: "/in/utkarsh-jaiswal-7b2938376",
+    href: "https://www.linkedin.com/in/utkarsh-jaiswal-7b2938376/",
   },
 ];
 
